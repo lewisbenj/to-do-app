@@ -18,8 +18,8 @@ All data is stored locally using **LocalStorage**, no backend required.
 
 ## 🖼️ Demo
 
-![Todo Master Screenshot](https://i.imgur.com/3OQ8Z8G.png)
-*(Replace with an actual screenshot of your app)*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c9c7c6a-d943-4a5a-932a-a40ead414708" />
+
 
 ---
 
@@ -66,5 +66,3 @@ If you like this project, please ⭐ the repo to support it.
 ## 📜 License
 
 This project is licensed under the **MIT License** — feel free to use, modify, and share.
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd3a4c33-666d-4f2c-b5ea-bd52d8c63fe9" />
