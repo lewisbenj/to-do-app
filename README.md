@@ -45,16 +45,6 @@ Then open `index.html` directly in your browser — no setup needed 🚀
 
 ---
 
-## 🎬 Demo GIF
-
-You can record a short demo using **ScreenToGif**, **OBS**, or any screen recorder,
-then embed it in this README like so:
-
-```markdown
-![Todo Master Demo](demo.gif)
-```
-
----
 
 ## 🤝 Contributing
 
