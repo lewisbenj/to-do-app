@@ -1,9 +1,8 @@
- class TodoApp {
+class TodoApp {
             constructor() {
                 this.todos = JSON.parse(localStorage.getItem('todos')) || [];
                 this.currentFilter = 'all';
                 this.init();
-                this.createFloatingParticles();
             }
 
             init() {
@@ -138,7 +137,6 @@
                 document.getElementById('completedTasks').textContent = completed;
                 document.getElementById('pendingTasks').textContent = pending;
 
-                // Animate numbers
                 document.querySelectorAll('.stat-number').forEach(el => {
                     el.style.transform = 'scale(1.2)';
                     setTimeout(() => {
@@ -170,34 +168,8 @@
                 element.style.animation = 'slideOut 0.3s ease-in forwards';
                 setTimeout(callback, 300);
             }
-
-            createFloatingParticles() {
-                const particlesContainer = document.querySelector('.floating-particles');
-                const particleCount = 15;
-
-                for (let i = 0; i < particleCount; i++) {
-                    setTimeout(() => {
-                        const particle = document.createElement('div');
-                        particle.className = 'particle';
-                        particle.style.left = Math.random() * 100 + '%';
-                        particle.style.animationDelay = Math.random() * 4 + 's';
-                        particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
-                        particlesContainer.appendChild(particle);
-
-                        setTimeout(() => {
-                            particle.remove();
-                        }, 7000);
-                    }, i * 300);
-                }
-
-                // Tạo particles mới liên tục
-                setInterval(() => {
-                    this.createFloatingParticles();
-                }, 8000);
-            }
         }
 
-        // CSS cho animation shake và slideOut
         const style = document.createElement('style');
         style.textContent = `
             @keyframes shake {
@@ -219,5 +191,4 @@
         `;
         document.head.appendChild(style);
 
-        // Khởi tạo ứng dụng
         const app = new TodoApp();
